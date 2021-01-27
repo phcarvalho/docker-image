@@ -10,7 +10,7 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
       - name: Push to Github Package Registry
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v1
         with:
           tag_ref: ${{ github.ref }}
           username: ${{ github.actor }}
