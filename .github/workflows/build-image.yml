@@ -28,7 +28,10 @@ jobs:
           push: true
           tags: |
             ghcr.io/phcarvalho/teste:latest
-          build-args: BUILD_NAME=PEDRO,SECRET_TEST=SECRET
+          build-args: |
+            BUILD_NAME=PEDRO
+          secrets: |
+            SECRET_TEST=SECRET
       # - name: Check out the repo
       #   uses: actions/checkout@v2
       # - name: Push to Github Package Registry
