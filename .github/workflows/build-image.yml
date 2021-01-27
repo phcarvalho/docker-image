@@ -19,4 +19,4 @@ jobs:
           repository: phcarvalho/docker-image/teste
           tag_with_ref: true
           build-args: |
-            BUILD_NAME="PEDRO"
+            BUILD_NAME=PEDRO
