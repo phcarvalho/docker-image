@@ -4,6 +4,8 @@ ARG BUILD_NAME
 
 ENV NAME=$BUILD_NAME
 
+ENV SECRET=$SECRET_TEST
+
 WORKDIR /usr/src/app
 
 COPY package*.json ./
