@@ -27,8 +27,7 @@ jobs:
           platforms: linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/ppc64le,linux/s390x
           push: true
           tags: |
-            ghcr.io/user/app:latest
-            ghcr.io/user/app:${{ github.ref }}
+            ghcr.io/user/teste:latest
           build-args: BUILD_NAME=PEDRO,SECRET_TEST=SECRET
       # - name: Check out the repo
       #   uses: actions/checkout@v2
