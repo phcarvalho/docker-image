@@ -3,7 +3,7 @@ const express = require('express')
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send(`Hello ${process.env.name}!`)
+  res.send(`Hello ${process.env.NAME}!`)
 });
 
 app.listen(3000, () => {
