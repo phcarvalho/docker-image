@@ -12,10 +12,11 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1'
         with:
+          tag_ref: ${{ github.ref }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: phcarvalho/docker-image/teste:0.1
+          repository: phcarvalho/docker-image/teste
           tag_with_ref: true
-          secrets:
-            name: ${{ secrets.TESTNAME }}
+          secrets: |
+            name=${{ secrets.TESTNAME }}
