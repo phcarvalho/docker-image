@@ -1,0 +1,14 @@
+{
+  "name": "docker-deploy-study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/phcarvalho/docker-deploy-study.git",
+  "author": "Paulo Carvalho <phcarvalhodev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
